@@ -1,0 +1,53 @@
+/* components/Header/Header.module.css */
+
+.header {
+  background-color: #f2f4f7;
+  color: #101828;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  padding: 24px 120px 24px 120px;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #f2f4f7;
+}
+
+.logo {
+  width: 104px;
+  height: 16px;
+  /* color: #101828; */
+}
+
+.accent {
+  color: #3470ff;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.logo {
+  color: #101828;
+
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: center;
+}
+
+.link {
+  color: #101828;
+  text-decoration: none;
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.link:active {
+  color: #0b44cd;
+}
