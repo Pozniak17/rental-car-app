@@ -1,0 +1,72 @@
+.card {
+  width: 276px;
+  height: 424px;
+  outline: 1px solid tomato;
+}
+
+.image {
+  margin-bottom: 16px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.title {
+  font-family: Manrope;
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.accent {
+  color: #3470ff;
+}
+
+.wrapper_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.wrapper_support {
+  color: var(--gray, rgba(141, 146, 154, 1));
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  font-family: Manrope;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.wrapper_support_second {
+  display: flex;
+}
+
+.test {
+  border-right: 1px solid rgba(218, 221, 225, 1);
+}
+
+.button {
+  margin-top: 32px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--button, rgba(52, 112, 255, 1));
+  border: inherit;
+
+  color: var(--white, rgba(255, 255, 255, 1));
+
+  font-family: Manrope;
+  font-style: SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.button:hover,
+.button:focus {
+  background: rgba(11, 68, 205, 1);
+  cursor: pointer;
+}
