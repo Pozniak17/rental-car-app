@@ -10,7 +10,7 @@ const CarItem = ({ item }: Props) => {
   console.log(item.address.split(' ')[3]);
   return (
     <li className={css.card}>
-      <img className={css.image} src={item.img} alt={item.brand} width="276" height="268" />
+      <Image className={css.image} src={item.img} alt={item.brand} width="276" height="268" />
       <div className={css.wrapper_title}>
         <h2 className={css.title}>
           {item.brand} <span className={css.accent}>{item.model}</span>, {item.year}
