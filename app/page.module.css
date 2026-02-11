@@ -1,0 +1,69 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.imageStyle {
+  object-fit: cover;
+  filter: brightness(0.9); /*затемнення*/
+}
+
+.wrapper {
+  margin-top: 436px;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  color: var(--white, rgba(255, 255, 255, 1));
+
+  font-family: Manrope;
+  font-style: Bold;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.text {
+  margin-top: 16px;
+  color: var(--white, #ffffff);
+
+  font-family: Manrope;
+  font-style: SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.linkButton {
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  margin-top: 40px;
+  width: 276px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--button, rgba(52, 112, 255, 1));
+  border: inherit;
+
+  color: var(--white, rgba(255, 255, 255, 1));
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.linkButton:hover {
+  background-color: #0b44cd;
+}

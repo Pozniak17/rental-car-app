@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   images: {
     remotePatterns: [{ protocol: 'https', hostname: 'ac.goit.global' }],
+    qualities: [100],
   },
 };
 
