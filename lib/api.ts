@@ -32,3 +32,9 @@ export const getCars = async () => {
   const res = await axios.get<CarsListResponse>('/cars');
   return res.data;
 };
+
+export const getSingleCar = async (id: string) => {
+  const res = await axios.get<Car>(`/cars/${id}`);
+  // console.log(res);
+  return res.data;
+};

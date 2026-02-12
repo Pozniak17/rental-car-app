@@ -1,6 +1,7 @@
 import { Car } from '@/lib/api';
 import css from './CarItem.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type Props = {
   item: Car;
@@ -10,7 +11,14 @@ const CarItem = ({ item }: Props) => {
   console.log(item.address.split(' ')[3]);
   return (
     <li className={css.card}>
-      <Image className={css.image} src={item.img} alt={item.brand} width="276" height="268" />
+      <Image
+        className={css.image}
+        src={item.img}
+        alt={item.brand}
+        loading="eager"
+        width="276"
+        height="268"
+      />
       <div className={css.wrapper_title}>
         <h2 className={css.title}>
           {item.brand} <span className={css.accent}>{item.model}</span>, {item.year}
@@ -28,7 +36,9 @@ const CarItem = ({ item }: Props) => {
           <p>{item.type}</p>
           <p>{item.mileage}</p>
         </div>
-        <button className={css.button}>Read more</button>
+        <Link href={`/catalog/${item.id}`} className={css.linkButton}>
+          Read more
+        </Link>
       </div>
     </li>
   );

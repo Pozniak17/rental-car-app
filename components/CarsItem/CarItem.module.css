@@ -49,8 +49,12 @@
   border-right: 1px solid rgba(218, 221, 225, 1);
 }
 
-.button {
+.linkButton {
   margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   height: 44px;
   border-radius: 12px;
   background: var(--button, rgba(52, 112, 255, 1));
@@ -59,14 +63,13 @@
   color: var(--white, rgba(255, 255, 255, 1));
 
   font-family: Manrope;
-  font-style: SemiBold;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
 }
 
-.button:hover,
-.button:focus {
+.linkButton:hover,
+.linkButton:focus {
   background: rgba(11, 68, 205, 1);
   cursor: pointer;
 }
