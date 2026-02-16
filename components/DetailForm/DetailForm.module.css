@@ -1,0 +1,101 @@
+.form {
+  width: 640px;
+  height: 488px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.title {
+  color: var(--main, #101828);
+  margin-bottom: 8px;
+
+  font-family: Manrope;
+  font-style: SemiBold;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+
+  text-align: left;
+}
+
+.text {
+  color: var(--gray, #8d929a);
+  margin-bottom: 24px;
+
+  font-family: Manrope;
+  font-style: Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+
+  text-align: left;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10;
+  padding: 12px 20px;
+
+  border-radius: 12px;
+  border: inherit;
+  background: var(--inputs, #f7f7f7);
+}
+
+.inputText {
+  /* Comment */
+  width: 576px;
+  height: 88px;
+  /* Автолейаут */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 12px 20px 56px 20px;
+
+  border-radius: 12px;
+  border: inherit;
+  background: var(--Inputs, #f7f7f7);
+}
+
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  width: 156px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+  background: var(--button, #3470ff);
+  border: inherit;
+  cursor: pointer;
+
+  color: var(--white, #ffffff);
+
+  font-family: Manrope;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--button, #0b44cd);
+}
