@@ -1,18 +1,3 @@
-.img {
-  border-radius: 19px;
-}
-
-.container {
-  margin: 84px 120px 104px 120px;
-  display: flex;
-}
-
-.leftWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
 .infoWrapper {
   margin-left: 72px;
 }
