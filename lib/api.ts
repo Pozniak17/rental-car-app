@@ -28,10 +28,10 @@ export type CarsListResponse = {
 
 axios.defaults.baseURL = 'https://car-rental-api.goit.global';
 
-export const getCars = async () => {
-  const res = await axios.get<CarsListResponse>('/cars');
-  return res.data;
-};
+// export const getCars = async () => {
+//   const res = await axios.get<CarsListResponse>('/cars');
+//   return res.data;
+// };
 
 export const getSingleCar = async (id: string) => {
   const res = await axios.get<Car>(`/cars/${id}`);
