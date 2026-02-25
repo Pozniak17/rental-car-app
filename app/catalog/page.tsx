@@ -7,6 +7,7 @@ const Catalog = () => {
     <section className={css.section}>
       <FilterForm />
       <CarsList />
+      <button className={css.btn}>Load more</button>
     </section>
   );
 };
